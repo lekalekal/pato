@@ -16,7 +16,7 @@
 .section-slide{
     height: 100vh;
     width: 100vw;
-    background: url("img/slide1-01.jpg");
+    background: url("../img/slide1-01.jpg");
     .section-slide-inside{
         position: absolute;
         top: 50%;
@@ -32,9 +32,6 @@
             font-family: $font_three;
             font-size: 8rem;
         }
-        a{
-            font-family: Monserrat;
-        }
     }
 }
 
@@ -49,7 +46,7 @@
 }
 
 .discover{
-    background: url("img/bg-intro-01.jpg");
+    background: url("../img/bg-intro-01.jpg");
 
 }
 .content-intro, .content-the-blog{
@@ -77,5 +74,5 @@ grid-area: lvb;
 grid-area: lh;
 }
 .section-upcoming-events{
-    background: url("img/bg-event-02.jpg");
+    background: url("../img/bg-event-02.jpg");
 }
