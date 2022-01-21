@@ -1,14 +1,14 @@
 .title-red{
-    font-family: Courgette;
+    font-family: $font_two;
     color: #d61c22;
 }
 .title-white{
-    font-family: Poppins;
+    font-family: $font_three;
     color: #ffffff;
     text-transform: uppercase;
 }
 .title-dark{
-    font-family: Poppins;
+    font-family: $font_three;
     color: #222222;
     text-transform: uppercase;
 }
@@ -16,7 +16,7 @@
 .section-slide{
     height: 100vh;
     width: 100vw;
-    background: url("/img/slide1-01.jpg");
+    background: url("img/slide1-01.jpg");
     .section-slide-inside{
         position: absolute;
         top: 50%;
@@ -25,11 +25,11 @@
         text-align: center;
         color: #ffffff;
         span{
-            font-family: Courgette;
+            font-family: $font_two;
             font-size: 4rem;
         }
         h2{
-            font-family: Poppins;
+            font-family: $font_three;
             font-size: 8rem;
         }
         a{
@@ -49,7 +49,7 @@
 }
 
 .discover{
-    background: url("/img/bg-intro-01.jpg");
+    background: url("img/bg-intro-01.jpg");
 
 }
 .content-intro, .content-the-blog{
@@ -77,5 +77,5 @@ grid-area: lvb;
 grid-area: lh;
 }
 .section-upcoming-events{
-    background: url("/img/bg-event-02.jpg");
+    background: url("img/bg-event-02.jpg");
 }
