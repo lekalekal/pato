@@ -1,0 +1,13 @@
+.btn{
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 2% 3%;
+    border-radius: 10px;
+    color: #ec1d25;
+    font-size: 0.8rem;
+    letter-spacing: 0.04rem;
+    &:hover{
+        color: #ffffff;
+        background: #ec1d25;
+    }
+}

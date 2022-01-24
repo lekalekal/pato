@@ -1,6 +1,43 @@
 nav{
-    ul{
-        display: grid;
-
+    padding-top: 2%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+    border-top: 5px solid red;
+    a{
+        color: #ffffff;
+    }
+    .menu-bar{
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        a{
+            font-size: .9rem;
+            text-transform: uppercase;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            li{
+                &:nth-of-type(1) {
+                    padding-left: 0;
+                }
+                padding-left: 10%;
+            }
+        }
+    }
+    .social-and-menu{
+        display: flex;
+        list-style: none;
+        width: 12%;
+        justify-content: end;
+        li{
+            padding-right: 20%;
+        }
     }
 }

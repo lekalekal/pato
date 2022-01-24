@@ -1,3 +1,10 @@
+body{
+    font-family: $font_base;
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 a{
     color: #666666;
     text-decoration: none;
@@ -5,24 +12,19 @@ a{
         color: #ec1d25;
     }
 }
-.btn{
-    text-transform: uppercase;
-    background: #ffffff;
-    padding: 2% 3%;
-    border-radius: 10px;
-    color: #ec1d25;
-    &:hover{
-        color: #ffffff;
-        background: #ec1d25;
-    }
+img:not(.logo img){
+    width: 100%;
 }
-.wrapper{
-    max-width: 1200px;
-    margin: 0 auto;
+.transition-04{
+    transition: all 0.4s ease-in-out;
 }
+
 .bg-pattern1{
     background: url("../img/pattern1.png");
 }
 .bg-pattern2{
     background: url("../img/pattern2.png");
+}
+section img{
+border-radius: 4%;
 }

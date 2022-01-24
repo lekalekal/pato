@@ -12,10 +12,12 @@
     color: #222222;
     text-transform: uppercase;
 }
-
+section>div:not(.content-the-blog, .content-intro){
+    text-align: center;
+}
 .section-slide{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background: url("../img/slide1-01.jpg");
     .section-slide-inside{
         position: absolute;
@@ -36,12 +38,9 @@
 }
 .section-welcome-inside{
     display: grid;
+    gap: 2%;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    img{
-        width: 50%;
-        border-radius: 4%;
-    }
 }
 .discover{
     background: url("../img/bg-intro-01.jpg");
@@ -49,6 +48,7 @@
 }
 .content-intro, .content-the-blog{
     display: grid;
+    gap: 2%;
     grid-template-columns: repeat(3, 1fr);
 }
 .content-our-menu{
@@ -58,8 +58,16 @@
     "lva lvb ."
     "lh lh ."
     ;
-    img{
-        width: 50%;
+    gap: 2%;
+    .item-our-menu{
+        position: relative;
+    }
+    a{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 3;
     }
 }
 .item-our-menu:nth-of-type(1){
