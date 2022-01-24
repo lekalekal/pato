@@ -33,23 +33,61 @@ section>div:not(.content-the-blog, .content-intro){
         h2{
             font-family: $font_three;
             font-size: 8rem;
+            padding-bottom: 7%;
         }
     }
 }
+
 .section-welcome-inside{
     display: grid;
     gap: 2%;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+    padding: 5% 0;
+    .right-half{
+        display: block;
+        overflow: hidden;
+        max-width: 390px;
+        border-radius: 15px;
+        margin: 0 auto;
+        
+        img{
+            width: 100%;
+            /* height: 100%; */
+            display: block;
+            border: 10px;
+            transition: all .5s ease-in-out;
+            &:hover{
+
+                transform: scale(1.1);
+                transition: all .6s ease-in-out;
+            }
+        }
+    }
 }
 .discover{
-    background: url("../img/bg-intro-01.jpg");
-
+    padding: 12% 0;
+    background: url("../img/bg-intro-01.jpg") center fixed;
 }
+.block-discovery a{
+    border-radius: 3%;
+    overflow: hidden;
+    display: block;
+    img{
+        display: block;
+        transition: all 0.5s ease-out;
+        border-radius: 3%;
+        &:hover{
+            transform: scale(1.1);
+            border-radius: 3%;
+        }
+    }
+    }
 .content-intro, .content-the-blog{
     display: grid;
     gap: 2%;
     grid-template-columns: repeat(3, 1fr);
+    margin: 5% auto;
 }
 .content-our-menu{
     display: grid;
@@ -59,8 +97,13 @@ section>div:not(.content-the-blog, .content-intro){
     "lh lh ."
     ;
     gap: 2%;
+    padding-top: 3%;
     .item-our-menu{
         position: relative;
+        transition: all 0.5s ease-out;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     a{
         position: absolute;
@@ -71,13 +114,13 @@ section>div:not(.content-the-blog, .content-intro){
     }
 }
 .item-our-menu:nth-of-type(1){
-grid-area: lva;
+    grid-area: lva;
 }
 .item-our-menu:nth-of-type(2){
-grid-area: lvb;
+    grid-area: lvb;
 }
 .item-our-menu:nth-of-type(5){
-grid-area: lh;
+    grid-area: lh;
 }
 .section-upcoming-events{
     background: url("../img/bg-event-02.jpg");
