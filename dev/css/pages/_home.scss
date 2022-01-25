@@ -24,6 +24,7 @@ section>div:not(.content-the-blog, .content-intro){
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
+        margin: 4% 0;
         text-align: center;
         color: #ffffff;
         span{
@@ -124,4 +125,19 @@ section>div:not(.content-the-blog, .content-intro){
 }
 .section-upcoming-events{
     background: url("../img/bg-event-02.jpg");
+}
+
+section:not(.section-intro){
+    padding: 5% 0;
+}
+.sign-up-inside{
+    &>*{
+        margin: 1%;
+    }
+    i{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
 }

@@ -1,3 +1,17 @@
+button{
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 2% 3%;
+
+}
+.btn-black{
+    background: #000000;
+    color: #ffffff;
+    &:hover{
+        background: #ec1d25;
+    }
+}
 .btn{
     text-transform: uppercase;
     background: #ffffff;

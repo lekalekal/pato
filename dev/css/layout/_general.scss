@@ -28,3 +28,36 @@ img:not(.logo img){
 section img{
 border-radius: 4%;
 }
+.sizefull{
+    width: 100%;
+    height: 100%;
+}
+.txt-10{
+    font-family: $font_base;
+    font-size: 1rem;
+    color: #666666;
+}
+.p-l-2{
+padding-left: 2%;
+}
+.txt-5{
+    font-family: $font_three;
+    font-size: 1.2rem;
+    color: #333333;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+}
+.bo-rad-4{
+    border-radius: 10px;
+}
+.d-flex-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.m-1{
+    margin: 1%;
+}
+.pos-rel{
+    position: relative;
+}
