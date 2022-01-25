@@ -59,7 +59,7 @@ section>div:not(.content-the-blog, .content-intro){
             border: 10px;
             transition: all .5s ease-in-out;
             &:hover{
-
+                
                 transform: scale(1.1);
                 transition: all .6s ease-in-out;
             }
@@ -83,7 +83,7 @@ section>div:not(.content-the-blog, .content-intro){
             border-radius: 3%;
         }
     }
-    }
+}
 .content-intro, .content-the-blog{
     display: grid;
     gap: 2%;
@@ -139,5 +139,30 @@ section:not(.section-intro){
         top: 50%;
         right: 0;
         transform: translateY(-50%);
+    }
+}
+
+.section-our-video{
+    background: url("../img/bg-cover-video-02.jpg") center fixed;
+    .our-video-text{
+        padding: 14% 0;
+        .btn-play{
+            width: 70px;
+            height: 70px;
+            margin: 0 auto;
+            .circle{
+                display: grid;
+                align-items: center;
+                color: #222222;
+                background: #ffffff;
+                border-radius: 50%;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    transform: scale(1.3);
+                    background-color: rgba(245,56,62,.5);
+                    color: #fff;
+                }
+            }
+        }
     }
 }
