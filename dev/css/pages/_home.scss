@@ -1,16 +1,22 @@
 .title-red{
     font-family: $font_two;
     color: #d61c22;
+    font-size: 2rem;
+    line-height: 3.3rem;
+}
+.title-white, .title-dark{
+font-size: 2.6rem;
+letter-spacing: 0.3rem;
+line-height: 4.3rem;
+text-transform: uppercase;
 }
 .title-white{
     font-family: $font_three;
     color: #ffffff;
-    text-transform: uppercase;
 }
 .title-dark{
     font-family: $font_three;
     color: #222222;
-    text-transform: uppercase;
 }
 section>div:not(.content-the-blog, .content-intro){
     text-align: center;
@@ -162,6 +168,44 @@ section:not(.section-intro){
                     background-color: rgba(245,56,62,.5);
                     color: #fff;
                 }
+            }
+        }
+    }
+}
+
+.review-content{
+    max-width: 50%;
+    padding-bottom: 4rem;
+    .review-avatar{
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid #ec1d25;
+        width: 8rem;
+        height: 8rem;
+        img{
+            width: 100%;
+        }
+    }
+    .fa-star {
+        color: #e41d24;
+    }
+    .author{
+        text-transform: uppercase;
+    }
+    .controls{
+        i{
+            background: gray;
+            color: transparent;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            margin: 0.4rem;
+            transition: all .3s ease-in-out;
+            &:hover{
+                transform: scale(1.3);
+                background: #e41d24;
+                transition: all .3s ease-in-out;
             }
         }
     }
