@@ -5,10 +5,10 @@
     line-height: 3.3rem;
 }
 .title-white, .title-dark{
-font-size: 2.6rem;
-letter-spacing: 0.3rem;
-line-height: 4.3rem;
-text-transform: uppercase;
+    font-size: 2.6rem;
+    letter-spacing: 0.3rem;
+    line-height: 4.3rem;
+    text-transform: uppercase;
 }
 .title-white{
     font-family: $font_three;
@@ -45,24 +45,19 @@ section>div:not(.content-the-blog, .content-intro){
     }
 }
 
-.section-welcome-inside{
+.section-welcome-inside, .reservation-inside {
     display: grid;
     gap: 2%;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     padding: 5% 0;
     .right-half{
-        display: block;
         overflow: hidden;
         max-width: 390px;
         border-radius: 15px;
         margin: 0 auto;
         
         img{
-            width: 100%;
-            /* height: 100%; */
-            display: block;
-            border: 10px;
             transition: all .5s ease-in-out;
             &:hover{
                 
@@ -209,4 +204,70 @@ section:not(.section-intro){
             }
         }
     }
+}
+
+.book-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .col-block div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+        label {
+            text-align: left;
+            margin-bottom: 3%;
+            font-size: .9rem;
+        }
+        input, select{
+            border: 2px solid #d9d9d9;
+            border-radius: 10px;
+            height: 30px;
+            max-width: 250px;
+            padding: 20px;
+            color: #5e5e5e;
+            font-size: .9rem;
+        }
+    }
+}
+
+.ticket{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .img-left {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background: url("../img/event-02.jpg") center / cover;
+    }
+    .txt-right {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2%;
+        padding: 5%;
+        background-color: #ffffff;
+        .countdown div{
+            display: inline-block;
+            color: #d61c22;
+        }
+    }
+    .red-flag{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e61c24;
+            font-size: .8rem;
+            opacity: .8;
+            color: #fff;
+            writing-mode: vertical-rl;
+            height: 400px;
+            width: 8%;
+    }
+}
+
+.link-arrow{
+    text-transform: uppercase;
 }
