@@ -205,10 +205,18 @@ section:not(.section-intro, .contact-form){
         }
     }
 }
+.section-reservation{
 
+
+img{
+    @media screen and (max-width:770px){
+        display: none;
+    }
+}
 .book-form{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    }
     .col-block div{
         display: flex;
         flex-direction: column;
@@ -229,6 +237,7 @@ section:not(.section-intro, .contact-form){
         }
     }
 }
+
 
 .ticket{
     display: grid;
