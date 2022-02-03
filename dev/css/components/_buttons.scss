@@ -1,4 +1,4 @@
-button{
+button:not(.btn-show-sidebar){
     text-transform: uppercase;
     border-radius: 10px;
     font-size: 1.2rem;
